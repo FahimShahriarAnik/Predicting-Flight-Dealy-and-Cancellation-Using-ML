@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  jupyter:
+    image: jupyter_for_ml_proj
+    ports:
+      - "8888:8888"
+    volumes:
+      - C:/Users/fsani/OneDrive/Desktop/ML_projec_5232:/home/jovyan/work

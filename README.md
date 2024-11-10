@@ -22,3 +22,14 @@ This project is focused on building and deploying machine learning models using 
 ## how to boot up docker container and point it to your local folder
 docker run -p 8888:8888 -v "<local folder location>" <docker_image_name>
 docker run -p 8888:8888 -v "C:\Users\fsani\OneDrive\Desktop\ML_projec_5232:/home/jovyan/work" jupyter_for_ml_proj
+
+## how to run ipynb from local folder with the jupyter kernel
+When you run the docker command, you get a link with token, paste that to upper right corner of jupyter notebook as your kernel.
+
+
+## potential issues
+run the following command to check if your files are in sync with docker folder.
+
+docker exec -it <container_id> ls /home/jovyan/work
+
+the list of files should be same as the local folder you want to sync with, according to docker-compose file.
