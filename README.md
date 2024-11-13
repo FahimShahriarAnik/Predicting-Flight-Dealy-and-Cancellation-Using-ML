@@ -18,6 +18,8 @@ This project is focused on building and deploying machine learning models using 
    cd your-repo-name
 
 
+## Link to Git cheat sheet
+https://education.github.com/git-cheat-sheet-education.pdf
 
 ## how to boot up docker container and point it to your local folder
 docker run -p 8888:8888 -v "<local folder location>" <docker_image_name>
