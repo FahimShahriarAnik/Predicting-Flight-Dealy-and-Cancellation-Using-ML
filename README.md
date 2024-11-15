@@ -21,6 +21,14 @@ This project is focused on building and deploying machine learning models using 
 ## Link to Git cheat sheet
 https://education.github.com/git-cheat-sheet-education.pdf
 
+
+## To build the docker in local system:
+Run the following command in terminal
+docker-compose up build
+
+After that,
+run docker-compose up
+
 ## how to boot up docker container and point it to your local folder
 docker run -p 8888:8888 -v "<local folder location>" <docker_image_name>
 docker run -p 8888:8888 -v "C:\Users\fsani\OneDrive\Desktop\ML_projec_5232:/home/jovyan/work" jupyter_for_ml_proj
